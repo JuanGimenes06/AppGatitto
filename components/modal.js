@@ -1,8 +1,9 @@
 import { View, StyleSheet, Text, TouchableOpacity, Pressable } from "react-native";
 
-export function ModalTokens() {
 
-    
+export function ModalTokens({handleClose}) {
+
+
     return (
         <View style={ESTILO.container}>
             <View style={ESTILO.content}>
@@ -15,8 +16,8 @@ export function ModalTokens() {
                     </Text>
                 </Pressable>
                 <View style={ESTILO.buttonArea}>
-                    <TouchableOpacity style={ESTILO.button} >
-                        <Text style={ESTILO.buttonText}>
+                    <TouchableOpacity onPress={handleClose} style={ESTILO.button} >
+                        <Text style={ESTILO.buttonText} >
                             Voltar
                         </Text>
                     </TouchableOpacity>

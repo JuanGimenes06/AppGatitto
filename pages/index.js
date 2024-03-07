@@ -31,7 +31,7 @@ export function Home() {
                 </Text>
             </TouchableOpacity>
             <Modal visible={telaModal} animationType="fade" transparent={true}>
-                <ModalTokens/>
+            <ModalTokens handleClose={()=> configTelaModal(false)} />
             </Modal>
         </View>
     )
