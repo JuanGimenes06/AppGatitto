@@ -1,12 +1,12 @@
 import { View, StyleSheet, Text} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function PaginaSenhas() {
+export function PaginaPedidos() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <View style={ESTILO.header}>
                 <Text style={ESTILO.title}>
-                    Minhas senhas
+                    Meus pedidos
                 </Text>
             </View>
         </SafeAreaView>
@@ -15,9 +15,9 @@ export function PaginaSenhas() {
 
 const ESTILO = StyleSheet.create({
     header: {
-        padding: 14,
-        paddingTop: 58,
-        backgroundColor: "#392de9"
+        backgroundColor: "#C02D20",
+        alignItems: 'center',
+        justifyContent:'flex-start',
     },
     title: {
         fontSize: 18,

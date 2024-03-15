@@ -59,7 +59,9 @@ const ESTILO = StyleSheet.create({
         marginBottom: 25,
     },
     innerToken: {
-        backgroundColor: "#0e0e0e",
+        backgroundColor: "#fcfcfc",
+        borderColor: "#000",
+        borderWidth: 1.8,
         width: "85%",
         padding: 14,
         borderRadius: 8
