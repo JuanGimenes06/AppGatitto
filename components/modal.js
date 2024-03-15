@@ -1,19 +1,22 @@
-import { View, StyleSheet, Text, TouchableOpacity, Pressable } from "react-native";
+import { View, StyleSheet, Text, TouchableOpacity, Pressable, TextInput } from "react-native";
 
 
-export function ModalTokens({handleClose}) {
+export function ModalTokens({ handleClose }) {
 
 
     return (
         <View style={ESTILO.container}>
             <View style={ESTILO.content}>
                 <Text style={ESTILO.title}>
-                    Senha Gerada
+                    Anote seu pedido
                 </Text>
                 <Pressable style={ESTILO.innerToken} >
-                    <Text style={ESTILO.text} >
-                        senha
-                    </Text>
+                    <TextInput
+                        style={ESTILO.input}
+                        multiline={true}
+                        placeholder="Digite seu pedido aqui..."
+                    // Aqui você pode adicionar mais propriedades, como onChangeText, value, etc.
+                    />
                 </Pressable>
                 <View style={ESTILO.buttonArea}>
                     <TouchableOpacity onPress={handleClose} style={ESTILO.button} >
@@ -23,7 +26,7 @@ export function ModalTokens({handleClose}) {
                     </TouchableOpacity>
                     <TouchableOpacity style={[ESTILO.button, ESTILO.buttonSave]} >
                         <Text style={ESTILO.buttonSaveText}>
-                            Salvar Senha
+                            Enviar pedido
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -84,7 +87,7 @@ const ESTILO = StyleSheet.create({
     },
     buttonSave: {
 
-        backgroundColor: "#392DE9"
+        backgroundColor: "#C02D20"
     },
     buttonSaveText: {
         color: "#FFF",
